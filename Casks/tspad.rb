@@ -17,8 +17,8 @@ cask "tspad" do
   app "TsPad.app"
 
   # Beta builds are not signed or notarized yet (no Apple Developer account), so macOS would refuse to open them.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/TsPad.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/TsPad.app"]
   end
 
   # The data folder keeps the product's earlier name.
