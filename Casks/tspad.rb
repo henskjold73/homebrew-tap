@@ -7,7 +7,12 @@ cask "tspad" do
   desc "LINQPad for TypeScript: query data sources with typed TypeScript"
   homepage "https://github.com/henskjold73/tspad-beta"
 
+  livecheck do
+    skip "Updated by TsPad's release script"
+  end
+
   depends_on arch: :arm64
+  depends_on macos: :ventura
 
   app "TsPad.app"
 
