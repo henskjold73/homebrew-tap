@@ -1,25 +1,25 @@
 class Azp < Formula
   desc "Manage multiple Azure CLI logins, one config dir per profile"
   homepage "https://github.com/henskjold73/azp"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/henskjold73/azp/releases/download/v0.1.1/azp-aarch64-apple-darwin.tar.xz"
-      sha256 "73c1b840138a55f804cd390feb7665d6a42621c0a6ff34f7b7caaf7796798b8e"
+      url "https://github.com/henskjold73/azp/releases/download/v0.1.2/azp-aarch64-apple-darwin.tar.xz"
+      sha256 "ca2969af690df53540562324a2d60249c1bdbc0e2988ac2959a1bf91fd48a999"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/henskjold73/azp/releases/download/v0.1.1/azp-x86_64-apple-darwin.tar.xz"
-      sha256 "e8cded1b0c7bcedde53dd8290b01a5443df970210e268156141a69c657f294dc"
+      url "https://github.com/henskjold73/azp/releases/download/v0.1.2/azp-x86_64-apple-darwin.tar.xz"
+      sha256 "0176fcdc2d943adae1cc9fe12dab40b645b49405fc225b4e05734fdb26778888"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/henskjold73/azp/releases/download/v0.1.1/azp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a571faac36c9fa7fb0afccf9874f2fa588752511895957501be4feac7fbab0e0"
+      url "https://github.com/henskjold73/azp/releases/download/v0.1.2/azp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "43a011cde7ed081d9e13fa4875a60bac765e923c0bc96cbf2b95c3a64aa785dd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/henskjold73/azp/releases/download/v0.1.1/azp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e08251bcae2dc2dbed7f07b4b177462229cbf5197d31b36678a557d5329587f9"
+      url "https://github.com/henskjold73/azp/releases/download/v0.1.2/azp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b190a32d76b847ccd1815195780008ba6e171e671ed11cd0c730f81695afed7b"
     end
   end
   license "MIT"
