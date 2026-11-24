@@ -1,6 +1,6 @@
 cask "tspad" do
-  version "0.9.0-beta.5"
-  sha256 "d2534ca84fcec13b975173a2c41eafc155a485f4c6a70ce26cf5c080b9046e9d"
+  version "0.9.0-beta.7"
+  sha256 "4e9098e78a168f4a3fba1ba7043cd0787345e154a7d3c4d6e7ceb2199035d8f3"
 
   url "https://github.com/henskjold73/tspad-beta/releases/download/v#{version}/TsPad-#{version}-arm64.dmg"
   name "TsPad"
